@@ -1,10 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-/* import { resolve } from "path"; */
+import { resolve } from "path";
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss"],
-  /* alias: {
-    "@": resolve(__dirname, "/"),
-  }, */
+  alias: {
+    assets: "/<rootDir>/assets",
+  },
 })
